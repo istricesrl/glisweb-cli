@@ -1,0 +1,16 @@
+[project]
+name = "glisweb-cli"
+version = "0.0.1"
+description = "La riga di comando di glisweb"
+requires-python = ">=3.11"
+dependencies = ["typer", "textual", "pyyaml", "pymysql", "requests"]
+
+[project.scripts]
+glisweb-cli = "glisweb_cli.cli:app"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["glisweb_cli"]
